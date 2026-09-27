@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventarizz - Tambah Barang</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Inventarizz</h1>
+        <p>Tambah Data Inventaris</p>
+
+        <nav>
+            <a href="index.html">Daftar Inventaris</a> |
+            <a href="form.html">Tambah Barang</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Form Tambah Barang</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nama">Nama Barang:</label><br>
+                    <input type="text" id="nama" name="nama" required>
+                </p>
+                <p>
+                    <label for="gambar">Gambar Barang:</label><br>
+                    <input type="file" id="gambar" name="gambar" accept="image/*">
+                </p>
+                <p>
+                    <label for="kategori">Kategori:</label><br>
+                    <select id="kategori" name="kategori">
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="elektronik">Elektronik</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="alat">Alat</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="jumlah">Jumlah:</label><br>
+                    <input type="number" id="jumlah" name="jumlah" min="1" required>
+                </p>
+                <p>
+                    <label for="kondisi">Kondisi:</label><br>
+                    <select id="kondisi" name="kondisi">
+                        <option value="">-- Pilih Kondisi --</option>
+                        <option value="baik">Baik</option>
+                        <option value="rusak_ringan">Rusak Ringan</option>
+                        <option value="rusak_berat">Rusak Berat</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="deskripsi">Deskripsi Barang:</label><br>
+                    <textarea id="deskripsi" name="deskripsi" rows="5" cols="40"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Simpan Barang</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bagian Footer</p>
+    </footer>
+
+</body>
+
+</html>
